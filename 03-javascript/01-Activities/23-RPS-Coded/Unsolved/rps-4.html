@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <iframe width="1500" height="600" src="https://www.youtube.com/embed/tBm73YjJB0o" title="Animal Kingdom | Tree of Life | BGM Loop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="1500" height="600" src="https://www.youtube.com/embed/qzQahpxucKk" title="Star Wars Medley (Violin Cover) - Taylor Davis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
   <div>
@@ -20,7 +20,7 @@
   alert("The game is simple: Rock paper scissors.")
   alert("Pick 'r' for rock, 'p' for paper and 's' for scissors.")
   alert("Winner is best out of 3!")
-  alert("Click on the picture to listen to some music as you play.")
+  alert("Click on the video to listen to some music as you play.")
   alert("Ready?")
   alert("Rock...")
   alert("Paper...")
@@ -30,6 +30,18 @@
     // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
     var computerChoices = ["r", "p", "s"];
 
+    var wins = 0;
+    var losses = 0;
+    var ties = 0;
+
+
+    var directionsText = document.getElementById("directions-text");
+    var userChoiceText = document.getElementById("userchoice-text");
+    var computerChoiceText = document.getElementById("computerchoice-text");
+    var winsText = document.getElementById("wins-text");
+    var lossesText = document.getElementById("losses-text");
+    var tiesText = document.getElementById("ties-text");
+    
     // Create variables that hold references to the places in the HTML where we want to display things.
     var userChoiceText = document.getElementById("userchoice-text");
     var computerChoiceText = document.getElementById("computerchoice-text");
@@ -48,6 +60,9 @@
         // Display the user and computer guesses.
         userChoiceText.textContent = "You chose: " + userGuess;
         computerChoiceText.textContent = "The computer chose: " + computerGuess;
+        winsText.textContent = "wins: " + wins;
+        lossesText.textContent = "losses: " + losses;
+        tiesText.textContent = "ties: " + ties;
       }
     };
   </script>
