@@ -15,6 +15,17 @@
 
   <script type="text/javascript">
 
+    alert("In this game, you are going to play against ME: your beloved computer.")
+    alert("The game is simple: Rock paper scissors.")
+    alert("Pick 'r' for rock, 'p' for paper and 's' for scissors.")
+    alert("Winner is best out of 3!")
+    alert("Ready?")
+    alert("Rock...")
+    alert("Paper...")
+    alert("Scissors...")
+    alert("Shoot!")
+    
+
     // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
     var computerChoices = ["r", "p", "s"];
 
@@ -34,6 +45,16 @@
       alert("Computer guess: " + computerGuess);
 
     };
+
+    if (userGuess=="r" && computerGuess=="r"){
+        alert("Your tied!")
+     }
+     if (userGuess==r && computerGuess===p){
+        alert("Paper beats Rock! You lose!")
+     }
+     if (userGuess===r && computerGuess===s){
+        alert("Rock beats Scissors! You wone!")
+     }
   </script>
 
 </body>
