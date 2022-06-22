@@ -7,7 +7,7 @@
 </head>
 
 <body>
-
+  <iframe width="1500" height="600" src="https://www.youtube.com/embed/qzQahpxucKk" title="Star Wars Medley (Violin Cover) - Taylor Davis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div>
     <p id="directions-text">Press r, p or s to start playing!</p>
     <p id="userchoice-text"></p>
@@ -18,6 +18,17 @@
   </div>
 
   <script type="text/javascript">
+  alert("I CHALLANGE YOU TO A BATTLE OF THE HANDS!")
+  alert("The game is simple: Rock paper scissors.")
+  alert("In this game, you are going to play against ME: your beloved computer, as CPU.")
+  alert("Pick 'r' for rock, 'p' for paper and 's' for scissors.")
+  alert("Winner is best out of 3!")
+  alert("Click on the video to listen to some music as you play.")
+  alert("Ready?")
+  alert("Rock...")
+  alert("Paper...")
+  alert("Scissors...")
+  alert("Shoot!")
     // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
     var computerChoices = ["r", "p", "s"];
 
@@ -51,7 +62,7 @@
 
         // Display the user and computer guesses, and wins/losses/ties.
         userChoiceText.textContent = "You chose: " + userGuess;
-        computerChoiceText.textContent = "The computer chose: " + computerGuess;
+        computerChoiceText.textContent = "CPU: " + computerGuess;
         winsText.textContent = "wins: " + wins;
         lossesText.textContent = "losses: " + losses;
         tiesText.textContent = "ties: " + ties;
